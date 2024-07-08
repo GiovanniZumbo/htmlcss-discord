@@ -1,4 +1,4 @@
-/* Css reset */
+/* css reset */
 
 * {
     margin: 0;
@@ -6,15 +6,135 @@
     box-sizing: border-box;
 }
 
-/* Generics */
+/* utilities */
 
-body {
-    font-family: sans-serif;
+.container>:nth-child(odd) {
+    background-color: rgb(240, 152, 152);
 }
 
-/* Utilities */
+.container>:nth-child(even) {
+    background-color: rgb(145, 141, 141);
+}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.section {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    border: 2px dashed black;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.switch {
+    flex-direction: row-reverse;
+}
+
+/* Header */
+
+header>* {
+    border: 2px dashed white;
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+
+.top-bar {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(51, 181, 224);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu {
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.jumbotron {
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbo-content {
+    height: 250px;
+    flex-basis: 400px;
+    background-color: orange;
+}
+
+/* body */
+
+.section-body {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.left-content {
+    flex-basis: 35%;
+    background-color: aquamarine;
+}
+
+.right-content {
+    flex-grow: 1;
+    background-color: rgb(230, 230, 126);
+}
+
+.last-section {
+    height: 650px;
+}
+
+#btm-sec {
+    background-color: lightgrey;
+}
+
+/* footer */
+
+footer {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+    border: 2px dashed white;
+    align-items: center;
+}
+
+/* upper footer  */
+.upper-footer {
+    display: flex;
+    height: 400px;
+    width: 70%;
+    padding: 10px 0 30px;
+}
+
+.social {
+    flex-grow: 1;
+    background-color: orange;
+}
+
+.btm-menu {
+    flex-basis: 70%;
+    background-color: orangered;
+    display: flex;
+}
+
+.column-menu {
+    border: 2px white dashed;
+    flex-basis: 100%;
+
+}
+
+/* lower footer */
+
+.lower-footer {
+    height: 70px;
+    width: 70%;
+    background-color: yellow;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
 }
