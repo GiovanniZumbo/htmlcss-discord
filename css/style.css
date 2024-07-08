@@ -53,8 +53,16 @@ main>:nth-child(even) {
     background-color: #292841;
 }
 
+.bg-blue {
+    background-color: #628CF7;
+}
+
 .txt-mid {
     font-size: 16px;
+}
+
+.txt-xl {
+    font-size: x-large;
 }
 
 .txt-xxxl {
@@ -130,10 +138,15 @@ a {
 }
 
 h1,
-h2 {
-    padding: 10% 0;
+h2,
+{
+padding: 10% 0;
 }
 
+h3,
+h4 {
+    padding: 20px 0;
+}
 
 .heading-text {
     padding: 10px 5px;
@@ -176,52 +189,54 @@ section>.container {
 }
 
 .last-section {
-    height: 650px;
+    height: 900px;
+    text-align: center;
 }
 
-#btm-sec {
-    background-color: lightgrey;
-}
+.last-section p {
+    font-weight: bold;
+    padding: 10px 10px;
 
-/* footer */
 
-footer {
-    width: 100%;
-    flex-direction: column;
-    background-color: rgb(15, 15, 15);
-    border: 2px dashed white;
-    align-items: center;
-}
+    /* footer */
 
-/* upper footer  */
-.upper-footer {
-    height: 400px;
-    width: 70%;
-    padding: 10px 0 30px;
-}
+    footer {
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(15, 15, 15);
+        border: 2px dashed white;
+        align-items: center;
+    }
 
-.social {
-    flex-grow: 1;
-    background-color: orange;
-}
+    /* upper footer  */
+    .upper-footer {
+        height: 400px;
+        width: 70%;
+        padding: 10px 0 30px;
+    }
 
-.btm-menu {
-    flex-basis: 70%;
-    background-color: orangered;
-}
+    .social {
+        flex-grow: 1;
+        background-color: orange;
+    }
 
-.column-menu {
-    border: 2px white dashed;
-    flex-basis: 100%;
-}
+    .btm-menu {
+        flex-basis: 70%;
+        background-color: orangered;
+    }
 
-/* lower footer */
+    .column-menu {
+        border: 2px white dashed;
+        flex-basis: 100%;
+    }
 
-.lower-footer {
-    height: 70px;
-    width: 70%;
-    background-color: yellow;
-    padding: 10px 0;
-    justify-content: space-between;
-    align-items: center;
-}
+    /* lower footer */
+
+    .lower-footer {
+        height: 70px;
+        width: 70%;
+        background-color: yellow;
+        padding: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
