@@ -6,14 +6,30 @@
     box-sizing: border-box;
 }
 
+/* generics */
+
+body * {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
 /* utilities */
 
-.container>:nth-child(odd) {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main>:nth-child(odd) {
     background-color: rgb(240, 152, 152);
 }
 
-.container>:nth-child(even) {
+main>:nth-child(even) {
     background-color: rgb(145, 141, 141);
+}
+
+.flex {
+    display: flex;
 }
 
 .section {
@@ -29,47 +45,105 @@
     flex-direction: row-reverse;
 }
 
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: #232138;
+}
+
+.txt-mid {
+    font-size: 16px;
+}
+
+.white {
+    color: white;
+}
+
+button {
+    border-radius: 50px;
+    border-style: hidden;
+    min-width: 80px;
+    padding: 10px 15px;
+    height: 40px;
+}
+
 /* Header */
 
-header>* {
-    border: 2px dashed white;
-    height: 400px;
+
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    min-height: 600px;
+    text-align: center;
     width: 100%;
-    display: flex;
 }
 
 .top-bar {
-    height: 70px;
-    width: 100%;
-    background-color: rgb(51, 181, 224);
-    display: flex;
+    width: 1200px;
     padding: 10px;
-    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.top-btn {
+    text-align: right;
+    color: black;
+    flex-basis: 25%;
 }
 
 .top-menu {
-    flex-basis: 50%;
-    justify-content: space-between;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: space-around;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
 .jumbotron {
-    background-color: blue;
+    /* background-color: blue; */
+    width: 100%;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
 
 .jumbo-content {
-    height: 250px;
-    flex-basis: 400px;
-    background-color: orange;
+    height: 350px;
+    flex-basis: 700px;
+}
+
+h1 {
+    font-size: xxx-large;
+    padding: 5%;
+}
+
+.heading-text {
+    padding: 10px 5px;
+    line-height: 30px;
+}
+
+.jumbo-btn {
+    padding: 10px;
+}
+
+.btn-dw {
+    margin-right: 20px;
 }
 
 /* body */
 
 .section-body {
     flex-basis: 70%;
-    display: flex;
 }
 
 .left-content {
@@ -93,9 +167,7 @@ header>* {
 /* footer */
 
 footer {
-
     width: 100%;
-    display: flex;
     flex-direction: column;
     background-color: rgb(15, 15, 15);
     border: 2px dashed white;
@@ -104,7 +176,6 @@ footer {
 
 /* upper footer  */
 .upper-footer {
-    display: flex;
     height: 400px;
     width: 70%;
     padding: 10px 0 30px;
@@ -118,13 +189,11 @@ footer {
 .btm-menu {
     flex-basis: 70%;
     background-color: orangered;
-    display: flex;
 }
 
 .column-menu {
     border: 2px white dashed;
     flex-basis: 100%;
-
 }
 
 /* lower footer */
@@ -133,7 +202,6 @@ footer {
     height: 70px;
     width: 70%;
     background-color: yellow;
-    display: flex;
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
