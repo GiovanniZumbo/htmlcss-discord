@@ -10,7 +10,7 @@
 
 body * {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    color: #292841;
 }
 
 /* utilities */
@@ -21,11 +21,11 @@ body * {
 }
 
 main>:nth-child(odd) {
-    background-color: rgb(240, 152, 152);
+    background-color: white;
 }
 
 main>:nth-child(even) {
-    background-color: rgb(145, 141, 141);
+    background-color: rgb(247, 244, 244);
 }
 
 .flex {
@@ -33,7 +33,7 @@ main>:nth-child(even) {
 }
 
 .section {
-    height: 400px;
+    height: 550px;
     width: 100%;
     display: flex;
     border: 2px dashed black;
@@ -50,15 +50,23 @@ main>:nth-child(even) {
 }
 
 .bg-black {
-    background-color: #232138;
+    background-color: #292841;
 }
 
 .txt-mid {
     font-size: 16px;
 }
 
+.txt-xxxl {
+    font-size: xxx-large;
+}
+
 .white {
     color: white;
+}
+
+p {
+    font-weight: 200;
 }
 
 button {
@@ -81,7 +89,6 @@ header {
 }
 
 .top-bar {
-    width: 1200px;
     padding: 10px;
     align-items: center;
 }
@@ -122,10 +129,11 @@ a {
     flex-basis: 700px;
 }
 
-h1 {
-    font-size: xxx-large;
-    padding: 5%;
+h1,
+h2 {
+    padding: 10% 0;
 }
+
 
 .heading-text {
     padding: 10px 5px;
@@ -142,18 +150,29 @@ h1 {
 
 /* body */
 
-.section-body {
+section {
+    height: 650px;
+    padding: 10px 0;
+}
+
+section>.container {
+    height: 100%;
     flex-basis: 70%;
+    padding: 50px;
 }
 
 .left-content {
-    flex-basis: 35%;
-    background-color: aquamarine;
+    align-items: center;
+    height: 100%;
+    text-align: start;
+    padding: 50px 0;
 }
 
 .right-content {
+    height: 100%;
     flex-grow: 1;
-    background-color: rgb(230, 230, 126);
+    text-align: left;
+    padding: 50px 35px;
 }
 
 .last-section {
